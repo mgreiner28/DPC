@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => 'DPC Dev',
+    'name' => 'Test panel',
 
     /*
     |--------------------------------------------------------------------------
@@ -163,9 +163,11 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
+        Unisharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
         
 
         /*
@@ -191,7 +193,6 @@ return [
     */
 
     'aliases' => [
-
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,

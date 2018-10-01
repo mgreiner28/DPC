@@ -20,7 +20,7 @@ $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.
 $this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('auth.register');
 $this->post('register', 'Auth\RegisterController@register')->name('auth.register');
 
-Route::group(['middleware' => ['auth', 'approved'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/home', 'HomeController@index');
     
     Route::resource('permissions', 'Admin\PermissionsController');
@@ -31,10 +31,14 @@ Route::group(['middleware' => ['auth', 'approved'], 'prefix' => 'admin', 'as' =>
     Route::post('users_mass_destroy', ['uses' => 'Admin\UsersController@massDestroy', 'as' => 'users.mass_destroy']);
     Route::resource('teams', 'Admin\TeamsController');
     Route::post('teams_mass_destroy', ['uses' => 'Admin\TeamsController@massDestroy', 'as' => 'teams.mass_destroy']);
-    Route::resource('test_children', 'Admin\TestChildrenController');
-    Route::post('test_children_mass_destroy', ['uses' => 'Admin\TestChildrenController@massDestroy', 'as' => 'test_children.mass_destroy']);
-    Route::post('test_children_restore/{id}', ['uses' => 'Admin\TestChildrenController@restore', 'as' => 'test_children.restore']);
-    Route::delete('test_children_perma_del/{id}', ['uses' => 'Admin\TestChildrenController@perma_del', 'as' => 'test_children.perma_del']);
+    Route::resource('sales', 'Admin\SalesController');
+    Route::post('sales_mass_destroy', ['uses' => 'Admin\SalesController@massDestroy', 'as' => 'sales.mass_destroy']);
+    Route::post('sales_restore/{id}', ['uses' => 'Admin\SalesController@restore', 'as' => 'sales.restore']);
+    Route::delete('sales_perma_del/{id}', ['uses' => 'Admin\SalesController@perma_del', 'as' => 'sales.perma_del']);
+    Route::resource('purchases', 'Admin\PurchasesController');
+    Route::post('purchases_mass_destroy', ['uses' => 'Admin\PurchasesController@massDestroy', 'as' => 'purchases.mass_destroy']);
+    Route::post('purchases_restore/{id}', ['uses' => 'Admin\PurchasesController@restore', 'as' => 'purchases.restore']);
+    Route::delete('purchases_perma_del/{id}', ['uses' => 'Admin\PurchasesController@perma_del', 'as' => 'purchases.perma_del']);
 
     Route::model('messenger', 'App\MessengerTopic');
     Route::get('messenger/inbox', 'Admin\MessengerController@inbox')->name('messenger.inbox');

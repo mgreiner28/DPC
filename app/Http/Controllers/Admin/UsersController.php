@@ -123,11 +123,11 @@ class UsersController extends Controller
         
         $roles = \App\Role::get()->pluck('title', 'id');
 
-        $teams = \App\Team::get()->pluck('name', 'id')->prepend(trans('global.app_please_select'), '');$test_children = \App\TestChild::where('created_by_id', $id)->get();
+        $teams = \App\Team::get()->pluck('name', 'id')->prepend(trans('global.app_please_select'), '');$sales = \App\Sale::where('assigned_to_id', $id)->get();$sales = \App\Sale::where('created_by_id', $id)->get();$purchases = \App\Purchase::where('assigned_to_id', $id)->get();$purchases = \App\Purchase::where('created_by_id', $id)->get();
 
         $user = User::findOrFail($id);
 
-        return view('admin.users.show', compact('user', 'test_children'));
+        return view('admin.users.show', compact('user', 'sales', 'sales', 'purchases', 'purchases'));
     }
 
 

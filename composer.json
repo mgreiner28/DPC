@@ -10,6 +10,7 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.7",
+        "unisharp/laravel-filemanager": "^1.8",
         "nuovo/spreadsheet-reader": "^0.5.11",
         "laravelcollective/html": "^5.4"
     },

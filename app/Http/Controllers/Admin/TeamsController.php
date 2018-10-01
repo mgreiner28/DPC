@@ -108,11 +108,11 @@ class TeamsController extends Controller
         if (! Gate::allows('team_view')) {
             return abort(401);
         }
-        $test_children = \App\TestChild::where('created_by_team_id', $id)->get();$users = \App\User::where('team_id', $id)->get();
+        $users = \App\User::where('team_id', $id)->get();$sales = \App\Sale::where('created_by_team_id', $id)->get();$purchases = \App\Purchase::where('created_by_team_id', $id)->get();
 
         $team = Team::findOrFail($id);
 
-        return view('admin.teams.show', compact('team', 'test_children', 'users'));
+        return view('admin.teams.show', compact('team', 'users', 'sales', 'purchases'));
     }
 
 

@@ -4,11 +4,13 @@ return [
 		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
 		'permissions' => [		'title' => 'Permissions',		'fields' => [			'title' => 'Title',		],	],
 		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',			'permission' => 'Permissions',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',			'team' => 'Team',			'approved' => 'Approved',		],	],
+		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',			'team' => 'Team',		],	],
 		'teams' => [		'title' => 'Teams',		'fields' => [			'name' => 'Name',		],	],
-		'test-crud' => [		'title' => 'Test crud ',		'fields' => [		],	],
-		'test-parent' => [		'title' => 'Test parent',		'fields' => [		],	],
-		'test-child' => [		'title' => 'Test child',		'fields' => [			'field-one' => 'Field one',			'field-two' => 'Field two',			'created-by' => 'Created by',			'created-by-team' => 'Created by Team',		],	],
+		'test' => [		'title' => 'Test',		'fields' => [		],	],
+		'transactions' => [		'title' => 'Transactions',		'fields' => [		],	],
+		'sales' => [		'title' => 'Sales',		'fields' => [			'file-number' => 'File Number',			'client' => 'Client',			'property' => 'Property',			'city-town-village' => 'City/Town/Village',			'county' => 'County',			'buyer' => 'Buyer',			'agent' => 'Agent',			'buyer-attorney' => 'Buyer Attorney',			'rep-agmt' => 'Rep. Agmt.',			'approval-letter' => 'Approval Letter',			'buyer-approval-letter' => 'Buyer Approval Letter',			'search-update' => 'Search update',			'survey-update' => 'Survey Update',			'tax-receipts' => 'Tax Receipts',			'tax-certificate' => 'Tax Certificate',			'sewer-water-compliance' => 'Sewer/Water/Compliance',			'proposed-deed' => 'Proposed Deed',			'mortgage-commitment' => 'Mortgage Commitment',			'seach-taxes-deed' => 'Seach, Taxes, Deed Sent to Buyer Attorney',			'mortgage-payoff-info' => 'Mortgage Payoff Info',			'title-report-from-buyer' => 'Title Report from Buyer',			'clsoing-docs-drafted' => 'Clsoing Docs Drafted',			'closing-statement' => 'Closing Statement',			'closing-statement-to-buyer' => 'Closing Statement to Buyer',			'closing-date' => 'Closing Date',			'notes' => 'Notes',			'internal-notes' => 'Internal Notes',			'rates' => 'Rates',			'assigned-to' => 'Assigned to',			'created-by' => 'Created by',			'created-by-team' => 'Created by Team',		],	],
+		'user-actions' => [		'title' => 'User actions',		'created_at' => 'Time',		'fields' => [		],	],
+		'purchases' => [		'title' => 'Purchases',		'fields' => [			'file-number' => 'File Number',			'client' => 'Client',			'property' => 'Property',			'city-town-village' => 'City/Town/Village',			'county' => 'County',			'seller' => 'Seller',			'agent' => 'Agent',			'seller-attorney' => 'Seller Attorney',			'bank-attorney' => 'Bank Attorney',			'rep-agmt' => 'Rep. Agmt.',			'approval-letter' => 'Approval Letter',			'seller-approval-letter' => 'Seller Approval Letter',			'search-update-received' => 'Search Update Received',			'survey-update-received' => 'Survey Update Received',			'tax-receipts' => 'Tax Receipts',			'sewer-water-compliance' => 'Sewer/Water/Compliance Tax Certificates',			'pina' => 'PINA',			'proposed-deed-received' => 'Proposed Deed Received',			'mortgage-commitment' => 'Mortgage Commitment',			'mc-rate-lock-expiration' => 'MC Rate Lock Expiration',			'mortgage-commitment-sent-seller' => 'Mortgage Commitment Sent to Seller Attorney',			'survey-taxes-deed' => 'Survey, Taxes, & Deed Sent to Bank Attorney',			'ordered-title-insurance' => 'Ordered Title Insurance',			'title-report-to-seller' => 'Title Report to Seller',			'title-report-to-bank' => 'Title Report to Bank',			'hoi-binder' => 'HOI Binder',			'hoi-binder-receipt' => 'HOI Binder/Receipt to Bank',			'closing-statement-received' => 'Closing Statement Received',			'closing-statement-to-bank' => 'Closing Statement to Bank',			'closing' => 'Closing Date',			'notes' => 'Notes',			'internal-notes' => 'Internal Notes',			'rates' => 'Rates',			'assigned-to' => 'Assigned to',			'created-by' => 'Created by',			'created-by-team' => 'Created by Team',		],	],
 	'app_create' => 'Create',
 	'app_save' => 'Save',
 	'app_edit' => 'Edit',
@@ -253,5 +255,5 @@ return [
 	'app_deselect_all' => 'Deselect all',
 	'app_team-management' => 'Teams',
 	'app_team-management-singular' => 'Team',
-	'global_title' => 'DPC Dev',
+	'global_title' => 'test panel',
 ];

@@ -16,14 +16,13 @@ use App\Traits\FilterByTeam;
  * @property string $password
  * @property string $remember_token
  * @property string $team
- * @property tinyInteger $approved
 */
 class User extends Authenticatable
 {
     use Notifiable;
     use FilterByTeam;
 
-    protected $fillable = ['name', 'email', 'password', 'remember_token', 'approved', 'team_id'];
+    protected $fillable = ['name', 'email', 'password', 'remember_token', 'team_id'];
     protected $hidden = ['password', 'remember_token'];
     
     

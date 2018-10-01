@@ -59,21 +59,29 @@
                 </ul>
             </li>@endcan
             
-            @can('test_parent_access')
+            @can('transaction_access')
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-gears"></i>
-                    <span>@lang('global.test-parent.title')</span>
+                    <i class="fa fa-folder"></i>
+                    <span>@lang('global.transactions.title')</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    @can('test_child_access')
+                    @can('sale_access')
                     <li>
-                        <a href="{{ route('admin.test_children.index') }}">
-                            <i class="fa fa-gears"></i>
-                            <span>@lang('global.test-child.title')</span>
+                        <a href="{{ route('admin.sales.index') }}">
+                            <i class="fa fa-file"></i>
+                            <span>@lang('global.sales.title')</span>
+                        </a>
+                    </li>@endcan
+                    
+                    @can('purchase_access')
+                    <li>
+                        <a href="{{ route('admin.purchases.index') }}">
+                            <i class="fa fa-file"></i>
+                            <span>@lang('global.purchases.title')</span>
                         </a>
                     </li>@endcan
                     

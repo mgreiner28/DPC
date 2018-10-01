@@ -34,12 +34,17 @@ class PermissionSeed extends Seeder
             ['id' => 19, 'title' => 'team_edit',],
             ['id' => 20, 'title' => 'team_view',],
             ['id' => 21, 'title' => 'team_delete',],
-            ['id' => 23, 'title' => 'test_parent_access',],
-            ['id' => 24, 'title' => 'test_child_access',],
-            ['id' => 25, 'title' => 'test_child_create',],
-            ['id' => 26, 'title' => 'test_child_edit',],
-            ['id' => 27, 'title' => 'test_child_view',],
-            ['id' => 28, 'title' => 'test_child_delete',],
+            ['id' => 27, 'title' => 'transaction_access',],
+            ['id' => 28, 'title' => 'sale_access',],
+            ['id' => 29, 'title' => 'sale_create',],
+            ['id' => 30, 'title' => 'sale_edit',],
+            ['id' => 31, 'title' => 'sale_view',],
+            ['id' => 32, 'title' => 'sale_delete',],
+            ['id' => 38, 'title' => 'purchase_access',],
+            ['id' => 39, 'title' => 'purchase_create',],
+            ['id' => 40, 'title' => 'purchase_edit',],
+            ['id' => 41, 'title' => 'purchase_view',],
+            ['id' => 42, 'title' => 'purchase_delete',],
 
         ];
 
