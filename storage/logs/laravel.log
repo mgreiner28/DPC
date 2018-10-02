@@ -1,0 +1,12 @@
+[2018-10-01 03:16:48] local.ERROR: Class 'Unisharp\LaravelFilemanager\LaravelFilemanagerServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Unisharp\\LaravelFilemanager\\LaravelFilemanagerServiceProvider' not found at /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Unisharp\\\\Larave...')
+#1 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(548): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /Users/mi42291/dpc-dev/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /Users/mi42291/dpc-dev/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
